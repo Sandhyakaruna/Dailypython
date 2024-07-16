@@ -24,7 +24,6 @@ def add_in_base(num1, num2, base):
     # Convert the sum back to the given base
     return decimal_to_base(decimal_sum, base)
 
-# Test case
 num1 = "1010"
 num2 = "11001"
 base = 2
