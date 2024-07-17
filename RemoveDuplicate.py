@@ -23,4 +23,19 @@ def remove_duplicates(arr):
             unique_arr.append(arr[i])
 
     return unique_arr
+    def main():
+    import sys
+    input = sys.stdin.read
+    data = input().split()
+
+    n = int(data[0])
+    arr = list(map(int, data[1:]))
+
+    result = remove_duplicates(arr)
+    
+    # Print the unique elements separated by a space
+    print(" ".join(map(str, result)))
+
+if __name__ == "__main__":
+    main()
 
