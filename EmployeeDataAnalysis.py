@@ -12,7 +12,6 @@ def read_employee_data(file_path):
             })
     return employees
 
-# Function to calculate the average salary for each department
 def calculate_average_salaries(employees):
     department_salaries = {}
     for employee in employees:
@@ -25,11 +24,11 @@ def calculate_average_salaries(employees):
     average_salaries = {dept: sum(salaries) / len(salaries) for dept, salaries in department_salaries.items()}
     return average_salaries
 
-# Function to identify the department with the highest average salary
+
 def get_highest_average_salary_department(average_salaries):
     return max(average_salaries, key=average_salaries.get)
 
-# Function to write the results to a file
+
 def write_results_to_file(average_salaries, highest_salary_dept, output_file):
     with open(output_file, 'w') as file:
         file.write("Average Salaries by Department:\n")
@@ -38,7 +37,7 @@ def write_results_to_file(average_salaries, highest_salary_dept, output_file):
         file.write("\n")
         file.write(f"Department with the highest average salary: {highest_salary_dept}\n")
 
-# Main function to orchestrate the tasks
+
 def main():
     input_file = 'employees.txt'
     output_file = 'salary_report.txt'
