@@ -1,4 +1,4 @@
-# Function to read the file and parse the data
+
 def read_employee_data(file_path):
     employees = []
     with open(file_path, 'r') as file:
