@@ -19,7 +19,7 @@ def bfs_farthest(node, graph, n):
     return farthest_node, max_dist
 
 def tree_diameter(graph, n):
-    # Find the farthest node from an arbitrary node (node 1)
+  
     node, _ = bfs_farthest(1, graph, n)
     # Find the diameter from the farthest node found
     _, diameter = bfs_farthest(node, graph, n)
