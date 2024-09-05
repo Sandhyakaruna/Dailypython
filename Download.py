@@ -7,10 +7,10 @@ def download_page(url):
     response = requests.get(url)
     print(f"Downloaded {url}, status code: {response.status_code}")
 
-# List of URLs to download
+
 urls = ["(link unavailable)", "(link unavailable)", "(link unavailable)"]
 
-# Create threads for each URL
+
 threads = []
 start_time = time()
 for url in urls:
