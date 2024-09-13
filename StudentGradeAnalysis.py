@@ -7,11 +7,8 @@ students = [
     {"name": "Eva", "age": 20, "grades": [88, 82, 85]}
 ]
 
-# Function to calculate the average of a list
 def calculate_average(grades):
     return sum(grades) / len(grades)
-
-# Calculate the average grade for each student
 for student in students:
     student['average_grade'] = calculate_average(student['grades'])
 
