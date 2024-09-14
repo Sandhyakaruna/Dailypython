@@ -28,7 +28,7 @@ def create_project_structure(project_name):
         os.makedirs(folder, exist_ok=True)
         print(f"Created folder: {folder}")
     
-    # Create files
+    
     for file in files:
         with open(file, 'w') as f:
             f.write("")  # Create an empty file
@@ -36,7 +36,6 @@ def create_project_structure(project_name):
 
     print(f"\nProject structure for '{project_name}' created successfully!")
 
-# Example usage
 if __name__ == "__main__":
     project_name = input("Enter your project name: ")
     create_project_structure(project_name)
