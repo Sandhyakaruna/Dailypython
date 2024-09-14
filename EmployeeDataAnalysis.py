@@ -12,7 +12,7 @@ def read_employee_data(file_path):
             })
     return employees
 
-# Function to calculate the average salary for each department
+
 def calculate_average_salaries(employees):
     department_salaries = {}
     for employee in employees:
