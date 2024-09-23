@@ -5,7 +5,6 @@ def sort_multiples_of_2_4_6(lst):
     # Sort the identified multiples
     multiples.sort()
     
-    # Create a new list with sorted multiples in place of the original ones
     sorted_lst = []
     j = 0
     for i in lst:
